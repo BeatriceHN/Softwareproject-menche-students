@@ -1,0 +1,26 @@
+# Desining the python project
+
+1. Processing data
+  - 2 main types of data files
+      - 1st file: 2 columns containing [Protein 1, Protein 2] -> PPI
+      - 2nd file: 3 columns containing [protein,	location,	source(s)]
+
+  - How do we structure the data for the network?
+    - eg. [protein 1, location 1, protein 2, location 2]
+  - Certain proteins have multiple locations, how do we decide in which location the PPI takes place?
+  - What groups or categories do we want to include for the network (location, connectivity etc.)?
+  - The network is supposed to be multilayered. What information should be in each layer -> create data files for each layer with PPI
+
+2. PPI Network:
+  - What lay out will be used?
+  - How will the edges be weighted?
+  - What catergories will be used?
+  - Test out each layer on a 2D Network
+
+3. 3D visualisation of cell:
+  - Decide upon cell model (eukaryote)
+  - Create a 3D model of cell
+  - connect it to network
+  - Should the model be interactive or the network or both?
+
+4. Maybe VR?
