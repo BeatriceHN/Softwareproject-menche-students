@@ -12,6 +12,7 @@
   - The network is supposed to be multilayered. What information should be in each layer -> create data files for each layer with PPI
 
 2. PPI Network:
+  - Data type (matrix or hash table)
   - What lay out will be used?
   - How will the edges be weighted?
   - What catergories will be used?
