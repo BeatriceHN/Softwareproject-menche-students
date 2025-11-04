@@ -1,9 +1,10 @@
 # Literature collection
 
 ## 3D Network of biosystems:
-  - https://arxiv.org/abs/cond-mat/0304207
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC5310794/
-  - https://www.youtube.com/watch?v=CYlon2tvywA
+  - https://arxiv.org/abs/cond-mat/0304207    (yeast protein complex network, network with weighted edges)
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC5310794/  (string database for PPI and cytoscape)
+  - https://www.youtube.com/watch?v=CYlon2tvywA   (general network analysis)
+  - https://ics.uci.edu/~goodrich/teach/cs165/notes/NetworkAlgs.pdf  (network algorithms)
 
 
 ## 3D visualisation of cells (contains open-source code):
