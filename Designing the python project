@@ -16,6 +16,7 @@
   - How will the edges be weighted?
   - What catergories will be used?
   - Test out each layer on a 2D Network
+  - Combine the 2D networks and link them into 3D
 
 3. 3D visualisation of cell:
   - Decide upon cell model (eukaryote)
