@@ -15,6 +15,22 @@ def process_group_loc(group):
 		loc_dict[loc] = (x_val, y_val, z_val)
 	return loc_dict
 
+def draw_edges(G):
+	#draw edges using starting positions
+	for p1, p2 in G.edges():	#edge between p1 and p2
+		x = [pos[p1][0], pos[p2][0]] 	#first entry of tuple position pos
+		y = [pos[p1][1], pos[p2][1]]
+		z = [pos[p1][2], pos[p2][2]]
+		ax.plot(x,y,z, color='black')
+	return
+
+def draw_nodes(G):
+	#draw nodes with starting positions
+	for node in G.nodes():
+		x, y, z = pos[node]
+		ax.scatter(x, y, z, s=100, color='skyblue')
+		ax.text(x, y, z, node, size=10)
+	return
 
 
 
@@ -64,18 +80,8 @@ if __name__ == '__main__':
 	fig = plt.figure()
 	ax = fig.add_subplot(111, projection='3d')
 
-	#draw edges using starting positions
-	for p1, p2 in G.edges():	#edge between p1 and p2
-		x = [pos[p1][0], pos[p2][0]] 	#first entry of tuple position pos
-		y = [pos[p1][1], pos[p2][1]]
-		z = [pos[p1][2], pos[p2][2]]
-		ax.plot(x,y,z, color='black')
-
-	#draw nodes with starting positions
-	for node in G.nodes():
-		x, y, z = pos[node]
-		ax.scatter(x, y, z, s=100, color='skyblue')
-		ax.text(x, y, z, node, size=10)
+	draw_edges(G)
+	draw_nodes(G)
 
 	#visualize plot
 	#plt.draw()
@@ -91,17 +97,8 @@ if __name__ == '__main__':
 
 			ax.clear()  # clear previous drawing
 				    # redraw edges
-			for u, v in G.edges():
-				x = [pos[u][0], pos[v][0]]
-				y = [pos[u][1], pos[v][1]]
-				z = [pos[u][2], pos[v][2]]
-				ax.plot(x, y, z, color='black')
-			# redraw nodes
-			for node in G.nodes():
-				x, y, z = pos[node]
-				ax.scatter(x, y, z, s=100, color='skyblue')
-				ax.text(x, y, z, node, size=10)
-
+			draw_edges(G)
+			draw_nodes(G)	
 			plt.draw()
 			plt.pause(0.1)	
 
