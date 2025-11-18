@@ -1,0 +1,8 @@
+ID,Protein,Location,x,y,z
+P12004,PCNA,Nucleoplasm,3,2,5
+Q08379,GOLGA2,Golgi apparatus,1,6,2
+Q08379,GOLGA2,Microtubules,4,1,6
+Q9BW85,YJU2,Nucleoplasm,7,8,1
+Q9P289,STK26,Golgi apparatus,4,2,7
+Q9P289,STK26,Cytosol,5,3,8
+Q9P289,STK26,Plasma membrane,1,7,3
